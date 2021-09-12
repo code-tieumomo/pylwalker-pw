@@ -1,7 +1,14 @@
+html {
+  overflow: -moz-scrollbars-none;
+}
 body {
   background-color: #f9f9fa;
   font-family: "Patrick Hand", cursive;
   user-select: none;
+  scrollbar-width: none;
+}
+a:hover {
+  text-decoration: none;
 }
 .flex {
   -webkit-box-flex: 1;

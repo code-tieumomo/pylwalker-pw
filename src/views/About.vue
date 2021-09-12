@@ -9,6 +9,15 @@
 
     <h4 class="m-t-2"># CHANGE NOTES</h4>
     <div>
+      <span class="versions">@1.1.0</span> <br />
+      Release date: 12/09/2021 <br />
+      <div class="version-details">
+        <ul>
+          <li>View, update todo's detail.</li>
+        </ul>
+      </div>
+    </div>
+    <div>
       <span class="versions">@1.0.0</span> <br />
       Release date: 05/09/2021 <br />
       <div class="version-details">

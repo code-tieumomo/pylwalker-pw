@@ -5,7 +5,7 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">--- 📑 Awesome Todos list ---</h4>
+              <router-link to="/"><h4 class="card-title">--- 📑 Awesome Todos list ---</h4></router-link>
               <span>Today: {{ today }}</span>
 
               <div class="list-wrapper">

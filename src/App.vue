@@ -21,6 +21,10 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  width: 0;
 }
 html,
 body {

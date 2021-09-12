@@ -6,7 +6,7 @@
       <i class="input-helper"></i>
     </label>
   </div>
-  <i class="remove mdi mdi-close-circle-outline"></i>
+  <i class="remove mdi mdi-close-circle-outline" @click.stop.prevent="onTodoDetail(todo)"></i>
   <i class="remove mdi mdi-close-circle-outline" @click.stop.prevent="onQuickRemove(todo)"></i>
 </template>
 
@@ -33,6 +33,14 @@ export default {
       }).then(async (result) => {
         if (result.isConfirmed) {
           this.quickRemove(todo);
+        }
+      });
+    },
+    onTodoDetail(todo) {
+      this.$router.push({
+        name: "todo-detail",
+        params: {
+          id: todo.id
         }
       });
     }

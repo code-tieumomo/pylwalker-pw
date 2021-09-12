@@ -18,6 +18,18 @@ export default {
 
     return data;
   },
+  async getTodo(id) {
+    let { data, error, status } = await supabase
+      .from("todos")
+      .select("*")
+      .eq("id", id);
+    if (error && status !== 406) {
+      console.log("Error while fetching todo: ", error);
+      return null;
+    }
+
+    return data;
+  },
   async toggleStatus(todo) {
     const { error, status } = await supabase
       .from("todos")
@@ -51,6 +63,22 @@ export default {
         is_finished: todo.is_finished
       }
     ]);
+    if (error && status !== 406) {
+      return false;
+    }
+
+    return data;
+  },
+  async updateTodo(todo) {
+    const { data, error, status } = await supabase
+      .from("todos")
+      .update({
+        text: todo.text,
+        descriptions: todo.descriptions,
+        day: todo.day,
+        is_finished: todo.is_finished
+      })
+      .eq("id", todo.id);
     if (error && status !== 406) {
       return false;
     }
