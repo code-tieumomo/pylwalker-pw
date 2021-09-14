@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div class="page-content page-container" id="page-content">
     <div class="padding">
       <div class="row d-flex justify-content-center">
@@ -85,7 +85,7 @@ export default {
       const todo = {
         text: this.text,
         descriptions: "",
-        day: this.today,
+        day: moment().format("YYYY-MM-DD"),
         is_finished: false
       };
       this.addTodo(todo);

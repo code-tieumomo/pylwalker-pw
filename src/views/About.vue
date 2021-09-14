@@ -9,6 +9,15 @@
 
     <h4 class="m-t-2"># CHANGE NOTES</h4>
     <div>
+      <span class="versions">@1.1.0-hotfix</span> <br />
+      Release date: 14/09/2021 <br />
+      <div class="version-details">
+        <ul>
+          <li>Fix bug: invalid date format on adding new todo!</li>
+        </ul>
+      </div>
+    </div>
+    <div>
       <span class="versions">@1.1.0</span> <br />
       Release date: 12/09/2021 <br />
       <div class="version-details">
